@@ -1,10 +1,10 @@
 import { Context } from "./context";
 
-export interface Factory {
+export interface ContextFactory {
   create(): Context;
 }
 
-export class Factory implements Factory {
+export class ContextFactory implements ContextFactory {
   create(): Context {
     return new Context();
   }
